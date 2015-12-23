@@ -1,0 +1,25 @@
+# Spring properties
+spring:
+  application:
+     name: counter-service
+  freemarker:
+    enabled: false
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+
+# Discovery Server Access
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+    instance:
+        preferIpAddress: true
+
+# Map the error path to error template
+error:
+  path=/error
+
+# HTTP Server
+server:
+  port: 1234
